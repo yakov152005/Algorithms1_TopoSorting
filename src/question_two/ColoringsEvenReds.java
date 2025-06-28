@@ -1,3 +1,5 @@
+package question_two;
+
 public class ColoringsEvenReds {
     public static int countEvenRedColorings(int n) {
         int[] T = new int[n + 1];

@@ -1,3 +1,5 @@
+package question_one;
+
 import java.util.*;
 
 public class PathCounter {
