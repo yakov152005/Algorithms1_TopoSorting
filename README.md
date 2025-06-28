@@ -24,6 +24,14 @@ You will implement solutions for:
 Given the directed acyclic graph:
 
 ```
+ Graph G = new Graph(4);
+        int A = 0, B = 1, C = 2, D = 3;
+
+        G.addEdge(A, B);
+        G.addEdge(B, C);
+        G.addEdge(B, D);
+        G.addEdge(C, D);
+
 A → B → D
      ↓
       C → D
@@ -32,6 +40,7 @@ A → B → D
 ### Output:
 
 ```
+--------- Section A ---------
 All paths ending at D:
 A → B → C → D
 A → B → D
@@ -48,6 +57,7 @@ Using topological sort and dynamic programming:
 ### Output:
 
 ```
+--------- Section B ---------
 Number of paths ending at A: 1
 Number of paths ending at B: 2
 Number of paths ending at C: 3
